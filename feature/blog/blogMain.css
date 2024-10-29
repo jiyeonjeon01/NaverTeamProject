@@ -1,0 +1,485 @@
+* {
+    font-family: 'Nanum Gothic', sans-serif;
+    box-sizing: border-box; 
+    margin: 0; 
+    padding: 0;
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+
+
+/* 헤더 시작 */
+header { 
+    width: 100%;
+    /* border: 1px solid black; */
+    height:300px;  
+}
+/* 1. 헤더 가장 위 초록 부분 */
+#header-top { 
+    display: flex;
+    padding-left: 180px;
+    /* padding-right: 200px; */
+    /* border: 1px solid black; */
+    width: 100%;
+    height: 60px;
+    background-color: rgb(104, 194, 107);
+    margin-right: 10px;
+}
+/* 1-1. 헤더 가장 위 로고 */
+#header-top-logo { 
+    margin-right: 10px;
+    margin: 15px 10px 15px 0;
+
+}
+/*  1-2. 헤더 가장 위 검색창 영역 */
+#header-top-search {
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* border: 1px solid black; */
+    background-color: white;
+    margin: 10px 0 10px;
+}
+/* 1-2-1. 헤더 가장 위 검색창 영역 '글' */
+#search-box-text {
+    margin-left: 8px;
+    padding-left: 2px;
+    font-size: 0.9em;
+    color: rgb(104, 194, 107);
+}
+/* 1-2-2. 헤더 가장 위 검색창 영역 가운데 텍스트 공간 */
+#search-box-middle {
+    width: 195px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+#search-textarea { 
+    resize: none;
+    border: none;
+    margin-top: 6px;
+    font-size: 0.9em;
+    text-align: center;
+    align-items: center;
+}
+/* 1-2-3. 헤더 가장 위 검색창 영역 오른쪽 돋보기 아이콘 */
+#search-box-right {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* border: 1px solid black; */
+    background-color: rgb(47, 173, 47); /* 버튼 배경색 */
+}
+#search-box-right a {
+    color: white;
+}
+/* 1-3. 헤더 가장 위 검색창 영역 옆 버튼 */
+ #search-button {
+    width: auto;
+    padding-left: 5px;
+    padding-right: 5px;
+    margin-left: 5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(47, 173, 47);
+    font-size: small;
+}
+#search-button a {
+    color: white;
+}
+/* 1-4. 헤더 가장 위 로그인과 메뉴 아이콘 */
+#header-top-user {
+    display: flex;
+    margin-left: 420px;
+}
+#user {
+    border: 0.1px solid rgba(149, 149, 149, 0.456);
+    height: 30px;
+    margin-top: 15px;
+    padding: 3px 9px 3px 9px;
+    font-size: small;
+    color: white;
+    line-height: 20px;
+}
+#user a {
+    color: white;
+}
+#menu-icon {
+    border: 0.1px solid rgba(149, 149, 149, 0.456);
+    margin-left: 20px;
+}
+
+/* 2. 헤더 두번째 메뉴 부분 */ 
+#header-nav {
+    display: flex;
+    padding-left: 180px;
+    height: 30px;
+    margin-top: 10px;
+    font-size: small;
+    /* border-bottom: 0.1px solid #828282; */
+}
+#header-nav-left-left-1 {
+    padding-bottom: 11px;
+    border-bottom: 3px solid rgb(104, 194, 107);
+    color: rgb(0, 156, 0);
+    margin-right: 22px;
+}
+#header-nav-left-left-2 {
+    margin-right: 22px;
+}
+#header-nav-left-left-2:hover, 
+#header-nav-left-right-1:hover,
+#header-nav-left-right-2:hover,
+#header-nav-left-right-3:hover {
+    padding-bottom: 11px;
+    border-bottom: 3px solid rgb(104, 194, 107);
+    color: rgb(0, 156, 0);
+}
+#header-nav-left-right-1 {
+    margin-left: 25px;
+}
+#header-nav-left-right-2, #header-nav-left-right-3 {
+    margin-left: 19px;
+}
+#header-nav-right {
+    margin-left: 350px;
+    font-size: 0.9em;
+    letter-spacing: 0.005em;
+}
+#header-nav-right-left {
+    border: 0.1px solid #bfbfbf;
+    padding: 2px 6px 2px 6px;
+    background-color:rgb(104, 194, 107);
+    color: white;
+}
+#header-nav-right-right {
+    border: 0.1px solid #bfbfbf;
+    padding: 2px 8px 2px 8px;
+}
+
+/* 3. 헤더 마지막 메인 부분 */
+#header-main {
+    background-color: #eee;
+    height: 315px;
+}
+#header-main-header {
+    padding-left: 180px;
+    padding-top: 19px;
+    display: flex;
+}
+#header-main-header-1 {
+    color: rgb(224, 78, 78);
+}
+#header-main-header-middle {
+    margin-left: 480px;
+    font-size: small;
+}
+#header-main-header-middle-1 {
+    border: 0.1px solid #bfbfbf;
+    padding: 1px 6px 1px 6px;
+    color: white;
+    background-color: #6a6a6a;
+}
+#header-main-header-middle-2,
+#header-main-header-middle-3,
+#header-main-header-middle-4,
+#header-main-header-middle-5 {
+    border: 0.1px solid #bfbfbf;
+    padding: 1px 6px 1px 6px;
+    color: #6a6a6a;
+}
+
+#header-main-header-right {
+    font-size: small;
+}
+#header-main-header-right {
+    margin-left: 250px;
+}
+#header-main-header-right-1 {
+    border: 0.1px solid #bfbfbf;
+    padding: 1px 6px 1px 6px;
+    color: white;
+    background-color: #6a6a6a;
+}
+#header-main-header-right-2,
+#header-main-header-right-3 {
+    border: 0.1px solid #bfbfbf;
+    padding: 1px 6px 1px 6px;
+    color: #6a6a6a;
+}
+#header-main-main {
+    display: flex;
+}
+#header-main-main {
+    margin-top: 10px;
+    margin-left: 170px;
+}
+#yogurt1, #yogurt2, #yogurt3{
+    margin: 4px;
+}
+#headermain {
+    margin: 10px;
+    margin-left: 41px;
+    margin-top: 2px;
+    height: 243px;
+}
+/* 헤더 종료 */
+
+
+/* 메인 시작 */
+/* 1. 메인의 헤더*/
+main {
+    float: left;
+    width: 760px;
+    margin-top: 110px;
+    margin-left: 180px;
+    /* border: 1px solid black; */
+}
+#main-header {
+    padding-top: 60px;
+    padding-bottom: 50px;
+    line-height: 30px;
+    text-align: center;
+}
+/* 2. 메인의 nav */
+#main-nav {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    margin-bottom: 10px;
+    font-size: small;
+}
+#main-nav1{
+    font-weight: bold;
+    color: rgb(0, 156, 0);
+}
+#main-nav1:hover { 
+    text-decoration: underline;
+}
+#main-nav2 {
+    margin-left: 15px;
+}
+#main-nav2:hover, #main-nav3:hover, #main-nav4:hover, #main-nav5:hover,
+#main-nav6:hover, #main-nav7:hover, #main-nav8:hover {
+    text-decoration: underline;
+}
+#main-nav3, #main-nav5, #main-nav6, #main-nav7{
+    margin-left: 18px;
+}
+#main-nav4, #main-nav8 {
+    margin-left: 20px;
+}
+/* 3. 메인의 메인 */
+#main1 {
+    height: 220px;
+    margin-top: 30px;
+    border-bottom: 0.5px solid #dddddd;
+}
+/* (메인의 메인의 글의 프로필) */
+#main-left {
+    float: left;
+    margin-top: 20px;
+}
+#main-profile {
+    width: 150px;
+    /* border: 1px solid black; */
+    margin-bottom: 13px;
+    line-height: 17px;
+}
+#main-profile-img {
+    border-radius: 50%;
+    float: left;
+}
+#main-profile-name {
+    float: left;
+    font-size: 0.9em;
+    margin-left: 9px;
+    letter-spacing: -0.1em;
+}
+#main-profile-name:hover {
+    text-decoration: underline;
+}
+#main-profile-time {
+    float: none;
+    display: inline;
+    font-size: 0.8em;
+    color:#858585;
+    margin-left: 9px;
+    letter-spacing: -0.1em;
+}
+#main-title {
+    /* border: 1px solid black; */
+    font-size: 1em;
+    font-weight:bold;
+}
+#main-title:hover {
+    text-decoration: underline;
+}
+#main-detail {
+    margin-top: 10px;
+    font-size: 0.8em;
+    letter-spacing: -0.04em;
+}
+#main-detail:hover {
+    text-decoration: underline;
+}
+#main-reply {
+    font-size: 0.8em;
+    color:#858585;
+    margin-top: 12px;
+}
+#main-right {
+    float: left;
+    width: 160px;
+    height: 160px;
+    margin-left: 20px;   
+    margin-top: 5px;
+}
+/* 4. 메인의 푸터 */
+#main-footer {
+    display: flex;
+    margin-left: 200px;
+    margin-top: 40px;
+}
+#main-footer1 {
+    border: 0.5px solid #dddddd;
+    color: rgb(0, 156, 0);
+    padding: 2.5px 8.5px 2.5px 8.5px;
+    font-size: 0.9em;
+    font-weight: bold;
+}
+#main-footer2, #main-footer3, #main-footer4, #main-footer5
+, #main-footer6, #main-footer7, #main-footer8, #main-footer9, #main-footer10 {
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 0.9em;
+    margin-top: 4px;
+}
+#main-footer2:hover, #main-footer3:hover, #main-footer4:hover, #main-footer5:hover,
+#main-footer6:hover, #main-footer7:hover, #main-footer8:hover, #main-footer9:hover,
+#main-footer10:hover {
+    padding: 2.5px 8.5px 2.5px 8.5px;
+    margin-top: -0.5px;
+    /* margin-left: 10px; */
+    border: 0.5px solid #dddddd;
+}
+#main-footer11 {
+    margin-top: 4px;
+    font-size: 0.9em;
+}
+#main-footer11:hover {
+    text-decoration: underline;
+}
+/* 메인 종료 */
+
+
+
+/* 사이드바 시작 */
+aside {
+    float: left;
+    width: 280px;
+    height: 1110px;
+    margin-top: 130px;
+    margin-left: 45px;
+    border: 0.1px solid #dddddd;
+}
+#login {
+    height: 137px;
+    background-color: #ebebeb6f;
+}
+#login-top { 
+    padding-top: 15px;
+    font-size: 0.8em;
+    letter-spacing: -0.04em;
+    text-align: center;
+    color:#6a6a6a
+}
+#login-button {
+    margin-top: 10px;
+    margin-left: 10px;
+}
+#login-bottom {
+    letter-spacing: -0.005em;
+    margin-top: 10px;
+    text-align:center;
+    font-size: 0.75em;
+}
+#aside-sec1 {
+    padding-top: 20px;
+    padding-left: 15px;
+    height: 160px;
+    justify-content: space-between;
+    border-bottom: 0.1px solid #dddddd;
+}
+#aside-sec1-title {
+    padding-bottom: 30px;
+}
+#aside-sec1-title:hover {
+    text-decoration: underline;
+}
+#aside-sec1-text {
+    padding-top: 15px;
+    padding-bottom: 20px;
+}
+#aside-sec1-text1,
+#aside-sec1-text2,
+#aside-sec1-text3 {
+    font-size: 0.8em;
+    letter-spacing: -0.05em;
+    line-height: 2em;
+}
+#aside-sec1-text1:hover, #aside-sec1-text2:hover, #aside-sec1-text3:hover {
+    text-decoration: underline;
+}
+#aside-sec2 {
+    display: block;
+    font-size: 0.9em;
+    letter-spacing: -0.04em;
+    line-height: 1.5em;
+    padding-left: 20px;
+    padding-top: 25px;
+}
+#aside-sec2 p {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.5em; 
+}
+#aside-sec2-1:hover, #aside-sec2-2:hover, #aside-sec2-3:hover, 
+#aside-sec2-4:hover, #aside-sec2-5:hover, #aside-sec2-6:hover, #aside-sec2-7:hover {
+    text-decoration: underline;
+}
+
+
+
+
+/* 푸터 시작 */
+footer {
+    float: none;
+    margin-top: 3000px;
+    height: 200px;
+    /* border: 1px solid black; */
+    background-color: #ebebebb0;
+    padding-top: 40px;
+    padding-left: 350px;
+}
+#footer-top {
+    padding-right: 10px;
+    font-size: 0.8em;
+    letter-spacing: -0.01em;
+}
+#footer-bottom {
+    display: flex;
+    padding-left: 200px;
+    padding-top: 15px;
+    font-size: 0.7em;
+    align-items: center;
+}
+/* 푸터 종료 */
